@@ -1,6 +1,8 @@
 #include <msp430.h>
 int main(void)
 {
+    // This program creates two PWM signals, PWM output on 1.6 was used for this part //
+    
     WDTCTL = WDTPW | WDTHOLD;                 // Stop WDT
     P1DIR |= BIT6 | BIT7;                     // P1.6 and P1.7 output
     P1SEL1 |= BIT6 | BIT7;                    // P1.6 and P1.7 options select
